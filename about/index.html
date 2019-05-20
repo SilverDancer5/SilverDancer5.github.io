@@ -375,6 +375,22 @@
   
 
   
+  <div id="gitment-ctn"></div> 
+<link rel="stylesheet" href="//imsun.github.io/gitment/style/default.css">
+<script src="//imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment({
+  id: "http://yoursite.com/about/index.html",
+  owner: 'SilverDancer5',
+  repo: 'SilverDancer5.github.io',
+  oauth: {
+    client_id: 'd48d7eaf7090a5b51335',
+    client_secret: '53d1ae80fb5568bc32103a2d1ea7023f29bd0ee2',
+  },
+})
+gitment.render('gitment-ctn')
+</script>
+  
 
 
           </div>
