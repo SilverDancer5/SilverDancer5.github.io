@@ -8,13 +8,16 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>Tag: swift | SilverDancer的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
+  <meta name="description" content="心之所向，素屡以往">
+<meta property="og:type" content="website">
 <meta property="og:title" content="SilverDancer的博客">
 <meta property="og:url" content="http://yoursite.com/tags/swift/index.html">
 <meta property="og:site_name" content="SilverDancer的博客">
-<meta property="og:locale" content="default">
+<meta property="og:description" content="心之所向，素屡以往">
+<meta property="og:locale" content="zh-Hans">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="SilverDancer的博客">
+<meta name="twitter:description" content="心之所向，素屡以往">
   
     <link rel="alternative" href="/atom.xml" title="SilverDancer的博客" type="application/atom+xml">
   
@@ -49,6 +52,8 @@
 		  <h1 class="header-author"><a href="/">Hym</a></h1>
 		</hgroup>
 		
+		<p class="header-subtitle">学会思考，停止盲从</p>
+		
 
 		<nav class="header-menu">
 			<ul>
@@ -66,10 +71,6 @@
     			
             
     			
-    			<a q-on="click: openSlider(e, 'friends')" href="javascript:void(0)">友链</a>
-    			
-            
-    			
     			<a q-on="click: openSlider(e, 'aboutme')" href="javascript:void(0)">关于我</a>
     			
             
@@ -79,11 +80,15 @@
 				
 					<a class="github" target="_blank" href="https://github.com/SilverDancer5" title="github"><i class="icon-github"></i></a>
 		        
-					<a class="weibo" target="_blank" href="#" title="weibo"><i class="icon-weibo"></i></a>
+					<a class="weibo" target="_blank" href="https://weibo.com/2362838525/profile?rightmod=1&wvr=6&mod=personinfo" title="weibo"><i class="icon-weibo"></i></a>
 		        
-					<a class="rss" target="_blank" href="#" title="rss"><i class="icon-rss"></i></a>
+					<a class="zhihu" target="_blank" href="https://www.zhihu.com/people/er-fen-zhi-yi-18/activities" title="zhihu"><i class="icon-zhihu"></i></a>
 		        
-					<a class="zhihu" target="_blank" href="#" title="zhihu"><i class="icon-zhihu"></i></a>
+					<a class="jianshu" target="_blank" href="https://www.jianshu.com/u/79d12e22ec53" title="jianshu"><i class="icon-jianshu"></i></a>
+		        
+					<a class="douban" target="_blank" href="https://www.douban.com/people/152541159/" title="douban"><i class="icon-douban"></i></a>
+		        
+					<a class="bilibili" target="_blank" href="https://space.bilibili.com/14459622" title="bilibili"><i class="icon-bilibili"></i></a>
 		        
 			</div>
 		</nav>
@@ -107,6 +112,8 @@
 			  <h1 class="header-author js-header-author">Hym</h1>
 			</hgroup>
 			
+			<p class="header-subtitle"><i class="icon icon-quo-left"></i>学会思考，停止盲从<i class="icon icon-quo-right"></i></p>
+			
 			
 			
 				
@@ -120,11 +127,15 @@
 					
 						<a class="github" target="_blank" href="https://github.com/SilverDancer5" title="github"><i class="icon-github"></i></a>
 			        
-						<a class="weibo" target="_blank" href="#" title="weibo"><i class="icon-weibo"></i></a>
+						<a class="weibo" target="_blank" href="https://weibo.com/2362838525/profile?rightmod=1&wvr=6&mod=personinfo" title="weibo"><i class="icon-weibo"></i></a>
 			        
-						<a class="rss" target="_blank" href="#" title="rss"><i class="icon-rss"></i></a>
+						<a class="zhihu" target="_blank" href="https://www.zhihu.com/people/er-fen-zhi-yi-18/activities" title="zhihu"><i class="icon-zhihu"></i></a>
 			        
-						<a class="zhihu" target="_blank" href="#" title="zhihu"><i class="icon-zhihu"></i></a>
+						<a class="jianshu" target="_blank" href="https://www.jianshu.com/u/79d12e22ec53" title="jianshu"><i class="icon-jianshu"></i></a>
+			        
+						<a class="douban" target="_blank" href="https://www.douban.com/people/152541159/" title="douban"><i class="icon-douban"></i></a>
+			        
+						<a class="bilibili" target="_blank" href="https://space.bilibili.com/14459622" title="bilibili"><i class="icon-bilibili"></i></a>
 			        
 				</div>
 			</nav>
@@ -192,6 +203,17 @@
 	</div>
 
           
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/IOS//" class="article-tag-list-link color4">IOS</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
 
         </div>
         <div class="clearfix"></div>
@@ -235,7 +257,7 @@
 		toc_hide_index: true,
 		root: "/",
 		innerArchive: true,
-		showTags: false
+		showTags: true
 	}
 </script>
 
@@ -259,25 +281,17 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
       
       
     
-      
-      
-      
-    
     
 
     <ul style="width: 70%">
     
     
       
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">所有文章</a></li>
+      <li style="width: 50%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">所有文章</a></li>
       
         
       
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'friends')"><a href="javascript:void(0)" q-class="active:friends">友链</a></li>
-      
-        
-      
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" q-class="active:aboutme">关于我</a></li>
+      <li style="width: 50%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" q-class="active:aboutme">关于我</a></li>
       
         
     </ul>
@@ -356,38 +370,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
     	</section>
     
 
-    
-    	<section class="tools-section tools-section-friends" q-show="friends">
-  		
-        <ul class="search-ul">
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接1</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接2</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接3</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接4</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接5</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接6</a>
-            </li>
-          
-        </ul>
-  		
-    	</section>
     
 
     

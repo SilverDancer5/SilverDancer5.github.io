@@ -8,18 +8,18 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>Swift的学习使用 | SilverDancer的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="注释的使用1234// FIXME: 待解决的bug// TODO: 需要实现的功能// MARK: 不带下划线的说明// MARK: -带下划线说明">
+  <meta name="description" content="swift的学习笔记">
 <meta name="keywords" content="swift">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Swift的学习使用">
 <meta property="og:url" content="http://yoursite.com/2019/05/19/swift学习笔记/index.html">
 <meta property="og:site_name" content="SilverDancer的博客">
-<meta property="og:description" content="注释的使用1234// FIXME: 待解决的bug// TODO: 需要实现的功能// MARK: 不带下划线的说明// MARK: -带下划线说明">
-<meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-05-19T10:09:39.363Z">
+<meta property="og:description" content="swift的学习笔记">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2019-05-20T01:03:56.204Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Swift的学习使用">
-<meta name="twitter:description" content="注释的使用1234// FIXME: 待解决的bug// TODO: 需要实现的功能// MARK: 不带下划线的说明// MARK: -带下划线说明">
+<meta name="twitter:description" content="swift的学习笔记">
   
     <link rel="alternative" href="/atom.xml" title="SilverDancer的博客" type="application/atom+xml">
   
@@ -54,6 +54,8 @@
 		  <h1 class="header-author"><a href="/">Hym</a></h1>
 		</hgroup>
 		
+		<p class="header-subtitle">学会思考，停止盲从</p>
+		
 
 		<nav class="header-menu">
 			<ul>
@@ -71,10 +73,6 @@
     			
             
     			
-    			<a q-on="click: openSlider(e, 'friends')" href="javascript:void(0)">友链</a>
-    			
-            
-    			
     			<a q-on="click: openSlider(e, 'aboutme')" href="javascript:void(0)">关于我</a>
     			
             
@@ -84,11 +82,15 @@
 				
 					<a class="github" target="_blank" href="https://github.com/SilverDancer5" title="github"><i class="icon-github"></i></a>
 		        
-					<a class="weibo" target="_blank" href="#" title="weibo"><i class="icon-weibo"></i></a>
+					<a class="weibo" target="_blank" href="https://weibo.com/2362838525/profile?rightmod=1&wvr=6&mod=personinfo" title="weibo"><i class="icon-weibo"></i></a>
 		        
-					<a class="rss" target="_blank" href="#" title="rss"><i class="icon-rss"></i></a>
+					<a class="zhihu" target="_blank" href="https://www.zhihu.com/people/er-fen-zhi-yi-18/activities" title="zhihu"><i class="icon-zhihu"></i></a>
 		        
-					<a class="zhihu" target="_blank" href="#" title="zhihu"><i class="icon-zhihu"></i></a>
+					<a class="jianshu" target="_blank" href="https://www.jianshu.com/u/79d12e22ec53" title="jianshu"><i class="icon-jianshu"></i></a>
+		        
+					<a class="douban" target="_blank" href="https://www.douban.com/people/152541159/" title="douban"><i class="icon-douban"></i></a>
+		        
+					<a class="bilibili" target="_blank" href="https://space.bilibili.com/14459622" title="bilibili"><i class="icon-bilibili"></i></a>
 		        
 			</div>
 		</nav>
@@ -112,6 +114,8 @@
 			  <h1 class="header-author js-header-author">Hym</h1>
 			</hgroup>
 			
+			<p class="header-subtitle"><i class="icon icon-quo-left"></i>学会思考，停止盲从<i class="icon icon-quo-right"></i></p>
+			
 			
 			
 				
@@ -125,11 +129,15 @@
 					
 						<a class="github" target="_blank" href="https://github.com/SilverDancer5" title="github"><i class="icon-github"></i></a>
 			        
-						<a class="weibo" target="_blank" href="#" title="weibo"><i class="icon-weibo"></i></a>
+						<a class="weibo" target="_blank" href="https://weibo.com/2362838525/profile?rightmod=1&wvr=6&mod=personinfo" title="weibo"><i class="icon-weibo"></i></a>
 			        
-						<a class="rss" target="_blank" href="#" title="rss"><i class="icon-rss"></i></a>
+						<a class="zhihu" target="_blank" href="https://www.zhihu.com/people/er-fen-zhi-yi-18/activities" title="zhihu"><i class="icon-zhihu"></i></a>
 			        
-						<a class="zhihu" target="_blank" href="#" title="zhihu"><i class="icon-zhihu"></i></a>
+						<a class="jianshu" target="_blank" href="https://www.jianshu.com/u/79d12e22ec53" title="jianshu"><i class="icon-jianshu"></i></a>
+			        
+						<a class="douban" target="_blank" href="https://www.douban.com/people/152541159/" title="douban"><i class="icon-douban"></i></a>
+			        
+						<a class="bilibili" target="_blank" href="https://space.bilibili.com/14459622" title="bilibili"><i class="icon-bilibili"></i></a>
 			        
 				</div>
 			</nav>
@@ -175,9 +183,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="注释的使用"><a href="#注释的使用" class="headerlink" title="注释的使用"></a><strong><em>注释的使用</em></strong></h1><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// <span class="doctag">FIXME:</span> 待解决的bug</span></span><br><span class="line"><span class="comment">// <span class="doctag">TODO:</span> 需要实现的功能</span></span><br><span class="line"><span class="comment">// MARK: 不带下划线的说明</span></span><br><span class="line"><span class="comment">// MARK: -带下划线说明</span></span><br></pre></td></tr></table></figure>
-<a id="more"></a>
-<h1 id="UIView视图"><a href="#UIView视图" class="headerlink" title="UIView视图"></a><strong><em>UIView视图</em></strong></h1><table>
+        <h1 id="UIView视图"><a href="#UIView视图" class="headerlink" title="UIView视图"></a><strong><em>UIView视图</em></strong></h1><table>
 <thead>
 <tr>
 <th>项目</th>
@@ -211,6 +217,7 @@
 </tr>
 </tbody>
 </table>
+<a id="more"></a>
 <h2 id="UIView的外观属性"><a href="#UIView的外观属性" class="headerlink" title="UIView的外观属性"></a>UIView的外观属性</h2><h3 id="背景颜色-backgroundColor"><a href="#背景颜色-backgroundColor" class="headerlink" title="背景颜色 backgroundColor"></a>背景颜色 backgroundColor</h3><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//设置view的背景颜色</span></span><br><span class="line"><span class="keyword">let</span> view = <span class="type">UIView</span>(frame: <span class="type">CGRect</span>(x: , y: , width: , height: ))</span><br><span class="line">view.backgroundColor = <span class="type">UIColor</span>.black</span><br><span class="line"></span><br><span class="line"><span class="comment">//将图片设置为背景颜色</span></span><br><span class="line"><span class="keyword">let</span> image = <span class="type">UIImage</span>(named: <span class="string">"Sample"</span>)</span><br><span class="line">view.backgroundColor = <span class="type">UIColr</span>.<span class="keyword">init</span>(patternImage: image!)</span><br><span class="line"></span><br><span class="line"><span class="keyword">self</span>.view.addSubview(view)</span><br></pre></td></tr></table></figure>
 <h3 id="不透明度-alpha"><a href="#不透明度-alpha" class="headerlink" title="不透明度 alpha"></a>不透明度 alpha</h3><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">view.alpha = <span class="number">0.3</span></span><br></pre></td></tr></table></figure>
 <h3 id="隐藏属性-hidden"><a href="#隐藏属性-hidden" class="headerlink" title="隐藏属性 hidden"></a>隐藏属性 hidden</h3><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">view.isHidden = <span class="literal">true</span></span><br></pre></td></tr></table></figure>
@@ -438,7 +445,8 @@
 <h2 id="Grand-Central-Dispatch"><a href="#Grand-Central-Dispatch" class="headerlink" title="Grand Central Dispatch"></a>Grand Central Dispatch</h2><h1 id="IOS常用设备的使用"><a href="#IOS常用设备的使用" class="headerlink" title="IOS常用设备的使用"></a>IOS常用设备的使用</h1><h2 id="相机的使用"><a href="#相机的使用" class="headerlink" title="相机的使用"></a>相机的使用</h2><p>调用前需要在info中添加两个键值对</p>
 <p>Privacy - Photo Library Usage Description</p>
 <p>Privacy - Camera Usage Description</p>
-<h1 id="实用功能"><a href="#实用功能" class="headerlink" title="实用功能"></a><strong><em>实用功能</em></strong></h1>
+<h1 id="实用功能"><a href="#实用功能" class="headerlink" title="实用功能"></a><strong><em>实用功能</em></strong></h1><h1 id="注释的使用"><a href="#注释的使用" class="headerlink" title="注释的使用"></a><strong><em>注释的使用</em></strong></h1><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// <span class="doctag">FIXME:</span> 待解决的bug</span></span><br><span class="line"><span class="comment">// <span class="doctag">TODO:</span> 需要实现的功能</span></span><br><span class="line"><span class="comment">// MARK: 不带下划线的说明</span></span><br><span class="line"><span class="comment">// MARK: -带下划线说明</span></span><br></pre></td></tr></table></figure>
+
       
 
       
@@ -479,6 +487,17 @@
 	</div>
 
       
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/IOS//" class="article-tag-list-link color4">IOS</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
 
       
 
@@ -580,7 +599,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#注释的使用"><span class="toc-number">1.</span> <span class="toc-text">注释的使用</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#UIView视图"><span class="toc-number">2.</span> <span class="toc-text">UIView视图</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#UIView的外观属性"><span class="toc-number">2.1.</span> <span class="toc-text">UIView的外观属性</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#背景颜色-backgroundColor"><span class="toc-number">2.1.1.</span> <span class="toc-text">背景颜色 backgroundColor</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#不透明度-alpha"><span class="toc-number">2.1.2.</span> <span class="toc-text">不透明度 alpha</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#隐藏属性-hidden"><span class="toc-number">2.1.3.</span> <span class="toc-text">隐藏属性 hidden</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#切边属性-clipsToBounds"><span class="toc-number">2.1.4.</span> <span class="toc-text">切边属性 clipsToBounds</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#UIView-的几何属性"><span class="toc-number">2.2.</span> <span class="toc-text">UIView 的几何属性</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#UIView-的嵌套和层次关系"><span class="toc-number">2.3.</span> <span class="toc-text">UIView 的嵌套和层次关系</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#UIView的交互属性"><span class="toc-number">2.4.</span> <span class="toc-text">UIView的交互属性</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#CALayer层"><span class="toc-number">3.</span> <span class="toc-text">CALayer层</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#CALayer-边框"><span class="toc-number">3.1.</span> <span class="toc-text">CALayer 边框</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CALayer-投影"><span class="toc-number">3.2.</span> <span class="toc-text">CALayer 投影</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CALayer-设置圆角"><span class="toc-number">3.3.</span> <span class="toc-text">CALayer 设置圆角</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CALayer-渐变"><span class="toc-number">3.4.</span> <span class="toc-text">CALayer 渐变</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#UIViewController-视图控制器"><span class="toc-number">4.</span> <span class="toc-text">UIViewController 视图控制器</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#页面跳转"><span class="toc-number">4.1.</span> <span class="toc-text">页面跳转</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#页面关闭"><span class="toc-number">4.2.</span> <span class="toc-text">页面关闭</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#视图控制器的生命周期"><span class="toc-number">4.3.</span> <span class="toc-text">视图控制器的生命周期</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#UIScrollView"><span class="toc-number">4.4.</span> <span class="toc-text">UIScrollView</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#UITabBarController"><span class="toc-number">4.5.</span> <span class="toc-text">UITabBarController</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#创建tabBar"><span class="toc-number">4.5.1.</span> <span class="toc-text">创建tabBar</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#tabBar的索引"><span class="toc-number">4.5.2.</span> <span class="toc-text">tabBar的索引</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#在TabBar图标上显示角标"><span class="toc-number">4.5.3.</span> <span class="toc-text">在TabBar图标上显示角标</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#UINavigationController"><span class="toc-number">4.5.4.</span> <span class="toc-text">UINavigationController</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#UIPageController"><span class="toc-number">4.6.</span> <span class="toc-text">UIPageController</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#UIKit常用控件"><span class="toc-number">5.</span> <span class="toc-text">UIKit常用控件</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#UILabel"><span class="toc-number">5.1.</span> <span class="toc-text">UILabel</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#UILabel-不同样式"><span class="toc-number">5.1.1.</span> <span class="toc-text">UILabel 不同样式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#UILabel-按钮状态"><span class="toc-number">5.1.2.</span> <span class="toc-text">UILabel 按钮状态</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#UIButton-按钮事件响应"><span class="toc-number">5.1.3.</span> <span class="toc-text">UIButton 按钮事件响应</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#UIlabel-标签控件"><span class="toc-number">5.2.</span> <span class="toc-text">UIlabel 标签控件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#长文本换行"><span class="toc-number">5.3.</span> <span class="toc-text">长文本换行</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#标签文字样式的自定义"><span class="toc-number">5.4.</span> <span class="toc-text">标签文字样式的自定义</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#ss富文本的简单实现"><span class="toc-number">5.4.1.</span> <span class="toc-text">ss富文本的简单实现</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#UITextField-文本输入控件的使用"><span class="toc-number">6.</span> <span class="toc-text">UITextField 文本输入控件的使用</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#自定义UITextField样式"><span class="toc-number">6.1.</span> <span class="toc-text">自定义UITextField样式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#响应UITextField的键盘通知"><span class="toc-number">6.2.</span> <span class="toc-text">响应UITextField的键盘通知</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#UIAlertController"><span class="toc-number">7.</span> <span class="toc-text">UIAlertController</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#创建一个警告窗口"><span class="toc-number">7.1.</span> <span class="toc-text">创建一个警告窗口</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#创建一个动作表单"><span class="toc-number">7.2.</span> <span class="toc-text">创建一个动作表单</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#UIDatePicker"><span class="toc-number">8.</span> <span class="toc-text">UIDatePicker</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#UITableView"><span class="toc-number">9.</span> <span class="toc-text">UITableView</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#UICollectionView"><span class="toc-number">10.</span> <span class="toc-text">UICollectionView</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#拖拽交互体验"><span class="toc-number">11.</span> <span class="toc-text">拖拽交互体验</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#触屏事件和触摸手势"><span class="toc-number">12.</span> <span class="toc-text">触屏事件和触摸手势</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#UIRsponder"><span class="toc-number">12.1.</span> <span class="toc-text">UIRsponder</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#IOS图像和视频处理技"><span class="toc-number">13.</span> <span class="toc-text">IOS图像和视频处理技</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#UIBlurEffect"><span class="toc-number">13.1.</span> <span class="toc-text">UIBlurEffect</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#多线程技术"><span class="toc-number">14.</span> <span class="toc-text">多线程技术</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Thread"><span class="toc-number">14.1.</span> <span class="toc-text">Thread</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#给线程加锁使线程同步"><span class="toc-number">14.2.</span> <span class="toc-text">给线程加锁使线程同步</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Operation"><span class="toc-number">14.3.</span> <span class="toc-text">Operation</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Grand-Central-Dispatch"><span class="toc-number">14.4.</span> <span class="toc-text">Grand Central Dispatch</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#IOS常用设备的使用"><span class="toc-number">15.</span> <span class="toc-text">IOS常用设备的使用</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#相机的使用"><span class="toc-number">15.1.</span> <span class="toc-text">相机的使用</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#实用功能"><span class="toc-number">16.</span> <span class="toc-text">实用功能</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#UIView视图"><span class="toc-number">1.</span> <span class="toc-text">UIView视图</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#UIView的外观属性"><span class="toc-number">1.1.</span> <span class="toc-text">UIView的外观属性</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#背景颜色-backgroundColor"><span class="toc-number">1.1.1.</span> <span class="toc-text">背景颜色 backgroundColor</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#不透明度-alpha"><span class="toc-number">1.1.2.</span> <span class="toc-text">不透明度 alpha</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#隐藏属性-hidden"><span class="toc-number">1.1.3.</span> <span class="toc-text">隐藏属性 hidden</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#切边属性-clipsToBounds"><span class="toc-number">1.1.4.</span> <span class="toc-text">切边属性 clipsToBounds</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#UIView-的几何属性"><span class="toc-number">1.2.</span> <span class="toc-text">UIView 的几何属性</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#UIView-的嵌套和层次关系"><span class="toc-number">1.3.</span> <span class="toc-text">UIView 的嵌套和层次关系</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#UIView的交互属性"><span class="toc-number">1.4.</span> <span class="toc-text">UIView的交互属性</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#CALayer层"><span class="toc-number">2.</span> <span class="toc-text">CALayer层</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#CALayer-边框"><span class="toc-number">2.1.</span> <span class="toc-text">CALayer 边框</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CALayer-投影"><span class="toc-number">2.2.</span> <span class="toc-text">CALayer 投影</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CALayer-设置圆角"><span class="toc-number">2.3.</span> <span class="toc-text">CALayer 设置圆角</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CALayer-渐变"><span class="toc-number">2.4.</span> <span class="toc-text">CALayer 渐变</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#UIViewController-视图控制器"><span class="toc-number">3.</span> <span class="toc-text">UIViewController 视图控制器</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#页面跳转"><span class="toc-number">3.1.</span> <span class="toc-text">页面跳转</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#页面关闭"><span class="toc-number">3.2.</span> <span class="toc-text">页面关闭</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#视图控制器的生命周期"><span class="toc-number">3.3.</span> <span class="toc-text">视图控制器的生命周期</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#UIScrollView"><span class="toc-number">3.4.</span> <span class="toc-text">UIScrollView</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#UITabBarController"><span class="toc-number">3.5.</span> <span class="toc-text">UITabBarController</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#创建tabBar"><span class="toc-number">3.5.1.</span> <span class="toc-text">创建tabBar</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#tabBar的索引"><span class="toc-number">3.5.2.</span> <span class="toc-text">tabBar的索引</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#在TabBar图标上显示角标"><span class="toc-number">3.5.3.</span> <span class="toc-text">在TabBar图标上显示角标</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#UINavigationController"><span class="toc-number">3.5.4.</span> <span class="toc-text">UINavigationController</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#UIPageController"><span class="toc-number">3.6.</span> <span class="toc-text">UIPageController</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#UIKit常用控件"><span class="toc-number">4.</span> <span class="toc-text">UIKit常用控件</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#UILabel"><span class="toc-number">4.1.</span> <span class="toc-text">UILabel</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#UILabel-不同样式"><span class="toc-number">4.1.1.</span> <span class="toc-text">UILabel 不同样式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#UILabel-按钮状态"><span class="toc-number">4.1.2.</span> <span class="toc-text">UILabel 按钮状态</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#UIButton-按钮事件响应"><span class="toc-number">4.1.3.</span> <span class="toc-text">UIButton 按钮事件响应</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#UIlabel-标签控件"><span class="toc-number">4.2.</span> <span class="toc-text">UIlabel 标签控件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#长文本换行"><span class="toc-number">4.3.</span> <span class="toc-text">长文本换行</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#标签文字样式的自定义"><span class="toc-number">4.4.</span> <span class="toc-text">标签文字样式的自定义</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#ss富文本的简单实现"><span class="toc-number">4.4.1.</span> <span class="toc-text">ss富文本的简单实现</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#UITextField-文本输入控件的使用"><span class="toc-number">5.</span> <span class="toc-text">UITextField 文本输入控件的使用</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#自定义UITextField样式"><span class="toc-number">5.1.</span> <span class="toc-text">自定义UITextField样式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#响应UITextField的键盘通知"><span class="toc-number">5.2.</span> <span class="toc-text">响应UITextField的键盘通知</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#UIAlertController"><span class="toc-number">6.</span> <span class="toc-text">UIAlertController</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#创建一个警告窗口"><span class="toc-number">6.1.</span> <span class="toc-text">创建一个警告窗口</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#创建一个动作表单"><span class="toc-number">6.2.</span> <span class="toc-text">创建一个动作表单</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#UIDatePicker"><span class="toc-number">7.</span> <span class="toc-text">UIDatePicker</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#UITableView"><span class="toc-number">8.</span> <span class="toc-text">UITableView</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#UICollectionView"><span class="toc-number">9.</span> <span class="toc-text">UICollectionView</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#拖拽交互体验"><span class="toc-number">10.</span> <span class="toc-text">拖拽交互体验</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#触屏事件和触摸手势"><span class="toc-number">11.</span> <span class="toc-text">触屏事件和触摸手势</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#UIRsponder"><span class="toc-number">11.1.</span> <span class="toc-text">UIRsponder</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#IOS图像和视频处理技"><span class="toc-number">12.</span> <span class="toc-text">IOS图像和视频处理技</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#UIBlurEffect"><span class="toc-number">12.1.</span> <span class="toc-text">UIBlurEffect</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#多线程技术"><span class="toc-number">13.</span> <span class="toc-text">多线程技术</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Thread"><span class="toc-number">13.1.</span> <span class="toc-text">Thread</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#给线程加锁使线程同步"><span class="toc-number">13.2.</span> <span class="toc-text">给线程加锁使线程同步</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Operation"><span class="toc-number">13.3.</span> <span class="toc-text">Operation</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Grand-Central-Dispatch"><span class="toc-number">13.4.</span> <span class="toc-text">Grand Central Dispatch</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#IOS常用设备的使用"><span class="toc-number">14.</span> <span class="toc-text">IOS常用设备的使用</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#相机的使用"><span class="toc-number">14.1.</span> <span class="toc-text">相机的使用</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#实用功能"><span class="toc-number">15.</span> <span class="toc-text">实用功能</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#注释的使用"><span class="toc-number">16.</span> <span class="toc-text">注释的使用</span></a></li></ol>
                     </div>
                 </span>
             </div>
@@ -631,7 +650,7 @@
 		toc_hide_index: true,
 		root: "/",
 		innerArchive: true,
-		showTags: false
+		showTags: true
 	}
 </script>
 
@@ -655,25 +674,17 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
       
       
     
-      
-      
-      
-    
     
 
     <ul style="width: 70%">
     
     
       
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">所有文章</a></li>
+      <li style="width: 50%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">所有文章</a></li>
       
         
       
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'friends')"><a href="javascript:void(0)" q-class="active:friends">友链</a></li>
-      
-        
-      
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" q-class="active:aboutme">关于我</a></li>
+      <li style="width: 50%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" q-class="active:aboutme">关于我</a></li>
       
         
     </ul>
@@ -752,38 +763,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
     	</section>
     
 
-    
-    	<section class="tools-section tools-section-friends" q-show="friends">
-  		
-        <ul class="search-ul">
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接1</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接2</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接3</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接4</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接5</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接6</a>
-            </li>
-          
-        </ul>
-  		
-    	</section>
     
 
     

@@ -8,18 +8,18 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>OpenCV3.3的学习 | SilverDancer的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="OpenCV 3.3基础 Python版本图像加载与保存基本调用12345678910111213import cv2 as cvimport numpy as npsrc = cv.imread(&quot;E:/Pycharm/opencvTest/picture/0.jpg&quot;)cv.namedWindow(&quot;input image&quot;, cv.WINDOW_AUTOSIZE)cv.imshow(&quot;inp">
+  <meta name="description" content="OpenCV的学习笔记">
 <meta name="keywords" content="OpenCV3.3">
 <meta property="og:type" content="article">
 <meta property="og:title" content="OpenCV3.3的学习">
 <meta property="og:url" content="http://yoursite.com/2019/05/19/OpenCV学习/index.html">
 <meta property="og:site_name" content="SilverDancer的博客">
-<meta property="og:description" content="OpenCV 3.3基础 Python版本图像加载与保存基本调用12345678910111213import cv2 as cvimport numpy as npsrc = cv.imread(&quot;E:/Pycharm/opencvTest/picture/0.jpg&quot;)cv.namedWindow(&quot;input image&quot;, cv.WINDOW_AUTOSIZE)cv.imshow(&quot;inp">
-<meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-05-19T10:09:27.731Z">
+<meta property="og:description" content="OpenCV的学习笔记">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2019-05-20T01:03:00.703Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="OpenCV3.3的学习">
-<meta name="twitter:description" content="OpenCV 3.3基础 Python版本图像加载与保存基本调用12345678910111213import cv2 as cvimport numpy as npsrc = cv.imread(&quot;E:/Pycharm/opencvTest/picture/0.jpg&quot;)cv.namedWindow(&quot;input image&quot;, cv.WINDOW_AUTOSIZE)cv.imshow(&quot;inp">
+<meta name="twitter:description" content="OpenCV的学习笔记">
   
     <link rel="alternative" href="/atom.xml" title="SilverDancer的博客" type="application/atom+xml">
   
@@ -54,6 +54,8 @@
 		  <h1 class="header-author"><a href="/">Hym</a></h1>
 		</hgroup>
 		
+		<p class="header-subtitle">学会思考，停止盲从</p>
+		
 
 		<nav class="header-menu">
 			<ul>
@@ -71,10 +73,6 @@
     			
             
     			
-    			<a q-on="click: openSlider(e, 'friends')" href="javascript:void(0)">友链</a>
-    			
-            
-    			
     			<a q-on="click: openSlider(e, 'aboutme')" href="javascript:void(0)">关于我</a>
     			
             
@@ -84,11 +82,15 @@
 				
 					<a class="github" target="_blank" href="https://github.com/SilverDancer5" title="github"><i class="icon-github"></i></a>
 		        
-					<a class="weibo" target="_blank" href="#" title="weibo"><i class="icon-weibo"></i></a>
+					<a class="weibo" target="_blank" href="https://weibo.com/2362838525/profile?rightmod=1&wvr=6&mod=personinfo" title="weibo"><i class="icon-weibo"></i></a>
 		        
-					<a class="rss" target="_blank" href="#" title="rss"><i class="icon-rss"></i></a>
+					<a class="zhihu" target="_blank" href="https://www.zhihu.com/people/er-fen-zhi-yi-18/activities" title="zhihu"><i class="icon-zhihu"></i></a>
 		        
-					<a class="zhihu" target="_blank" href="#" title="zhihu"><i class="icon-zhihu"></i></a>
+					<a class="jianshu" target="_blank" href="https://www.jianshu.com/u/79d12e22ec53" title="jianshu"><i class="icon-jianshu"></i></a>
+		        
+					<a class="douban" target="_blank" href="https://www.douban.com/people/152541159/" title="douban"><i class="icon-douban"></i></a>
+		        
+					<a class="bilibili" target="_blank" href="https://space.bilibili.com/14459622" title="bilibili"><i class="icon-bilibili"></i></a>
 		        
 			</div>
 		</nav>
@@ -112,6 +114,8 @@
 			  <h1 class="header-author js-header-author">Hym</h1>
 			</hgroup>
 			
+			<p class="header-subtitle"><i class="icon icon-quo-left"></i>学会思考，停止盲从<i class="icon icon-quo-right"></i></p>
+			
 			
 			
 				
@@ -125,11 +129,15 @@
 					
 						<a class="github" target="_blank" href="https://github.com/SilverDancer5" title="github"><i class="icon-github"></i></a>
 			        
-						<a class="weibo" target="_blank" href="#" title="weibo"><i class="icon-weibo"></i></a>
+						<a class="weibo" target="_blank" href="https://weibo.com/2362838525/profile?rightmod=1&wvr=6&mod=personinfo" title="weibo"><i class="icon-weibo"></i></a>
 			        
-						<a class="rss" target="_blank" href="#" title="rss"><i class="icon-rss"></i></a>
+						<a class="zhihu" target="_blank" href="https://www.zhihu.com/people/er-fen-zhi-yi-18/activities" title="zhihu"><i class="icon-zhihu"></i></a>
 			        
-						<a class="zhihu" target="_blank" href="#" title="zhihu"><i class="icon-zhihu"></i></a>
+						<a class="jianshu" target="_blank" href="https://www.jianshu.com/u/79d12e22ec53" title="jianshu"><i class="icon-jianshu"></i></a>
+			        
+						<a class="douban" target="_blank" href="https://www.douban.com/people/152541159/" title="douban"><i class="icon-douban"></i></a>
+			        
+						<a class="bilibili" target="_blank" href="https://space.bilibili.com/14459622" title="bilibili"><i class="icon-bilibili"></i></a>
 			        
 				</div>
 			</nav>
@@ -267,6 +275,17 @@
 	</div>
 
       
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/OpenCV//" class="article-tag-list-link color2">OpenCV</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
 
       
 
@@ -419,7 +438,7 @@
 		toc_hide_index: true,
 		root: "/",
 		innerArchive: true,
-		showTags: false
+		showTags: true
 	}
 </script>
 
@@ -443,25 +462,17 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
       
       
     
-      
-      
-      
-    
     
 
     <ul style="width: 70%">
     
     
       
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">所有文章</a></li>
+      <li style="width: 50%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">所有文章</a></li>
       
         
       
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'friends')"><a href="javascript:void(0)" q-class="active:friends">友链</a></li>
-      
-        
-      
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" q-class="active:aboutme">关于我</a></li>
+      <li style="width: 50%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" q-class="active:aboutme">关于我</a></li>
       
         
     </ul>
@@ -540,38 +551,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
     	</section>
     
 
-    
-    	<section class="tools-section tools-section-friends" q-show="friends">
-  		
-        <ul class="search-ul">
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接1</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接2</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接3</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接4</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接5</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接6</a>
-            </li>
-          
-        </ul>
-  		
-    	</section>
     
 
     
